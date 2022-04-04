@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct WeatherView: View {
-    // Replace YOUR_API_KEY in WeatherManager with your own API key for the app to work
+
     var weather: ResponseBody
     
     var body: some View {
@@ -35,7 +35,7 @@ struct WeatherView: View {
                         
                         Spacer()
                         
-                        Text(weather.main.feelsLike.roundDouble() + "°")
+                        Text(weather.main.temp.roundDouble() + "°")
                             .font(.system(size: 100))
                             .fontWeight(.bold)
                             .padding()
